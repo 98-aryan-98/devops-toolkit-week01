@@ -15,6 +15,11 @@ Built as part of CSOT DevOps 2026.
 
 ## How to Run
 
+## Project Structure
+- `scripts/` - shell utility scripts
+- `systemd/` - systemd unit files
+- `nginx/` - nginx configuration
+
 ### System Health Monitor
 ```bash
 ./scripts/sysreport.sh
