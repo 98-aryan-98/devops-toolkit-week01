@@ -1,0 +1,9 @@
+[Unit]
+Description=System Health Monitor (one-shot)
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash %h/devops-toolkit-week01/scripts/sysreport.sh
+User=aryan98
+StandardOutput=journal
+StandardError=journal

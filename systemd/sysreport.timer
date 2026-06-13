@@ -1,0 +1,11 @@
+[Unit]
+Description=Run sysreport every 5 minutes
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=5min
+Unit=sysreport.service
+
+[Install]
+WantedBy=timers.target
+

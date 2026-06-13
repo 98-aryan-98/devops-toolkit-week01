@@ -1,0 +1,15 @@
+[Unit]
+Description=DevOps Toolkit App
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 %h/myapp/server.py
+Restart=on-failure
+RestartSec=3
+Environment=PORT=8000
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
